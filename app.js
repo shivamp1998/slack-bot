@@ -98,10 +98,6 @@ const handleCreateJiraIssue = async (message) => {
       }
 }
 
-const getJiraIssueLink = async (issueId) => {
-    return `https://sarveshpandey221.atlassian.net/browse/${issueId}`;
-}
-
 
 slackEvents.on("message", async (event) => {
   console.log(event?.subtype, event.bot_id);
